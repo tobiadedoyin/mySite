@@ -12,7 +12,6 @@ export default function App() {
   return (
     <>
       <Header />
-      <hr />
       <Nav />
       <About />
       <Experience />
