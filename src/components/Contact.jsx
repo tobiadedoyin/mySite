@@ -17,6 +17,7 @@ export default function Contact() {
               href="mailto:oladeletobiadedoyin@gmail.com"
               target="_blank"
               rel="noreferrer"
+              className="btn"
             >
               send a message
             </a>
@@ -29,6 +30,7 @@ export default function Contact() {
               href="https://wa.me/23408169686880?text=Hello%2C%20My%20Name%20is%20Oladele%20Tobi%2C%20%20I%20am%20a%20full%20stack%20developer%2C%20How%20can%20i%20be%20of%20help."
               target="_blank"
               rel="noreferrer"
+              className="btn"
             >
               send a message
             </a>
