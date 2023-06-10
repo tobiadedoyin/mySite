@@ -1,59 +1,24 @@
 import React from "react";
-import img1 from "../assets/portfolio1.jpg";
-import img2 from "../assets/portfolio2.jpg";
-import img3 from "../assets/portfolio3.jpg";
-import img4 from "../assets/portfolio4.jpg";
-import img5 from "../assets/portfolio5.png";
-import img6 from "../assets/portfolio6.jpg";
-
+import img1 from "../assets/portfolio.png";
+import img2 from "../assets/portfolio2.png";
 const data = [
   {
     id: 1,
     image: img1,
     title: "E-move",
-    github: "https://github.com",
-    demo: "https://github.com",
-    discription: " Lorem ipsum dolor sit amet.",
+    github: "https://github.com/tobiadedoyin/E-MOVE-WEBAPP",
+    demo: "https://e-move.onrender.com/",
+    discription:
+      "E-move is a payment solution that caters to commercial bus users and drivers.",
   },
   {
     id: 2,
     image: img2,
-    title: "E-move",
-    github: "https://github.com",
-    demo: "https://github.com",
-    discription: " Lorem ipsum dolor sit amet.",
-  },
-  {
-    id: 3,
-    image: img3,
-    title: "E-move",
-    github: "https://github.com",
-    demo: "https://github.com",
-    discription: " Lorem ipsum dolor sit amet.",
-  },
-  {
-    id: 4,
-    image: img4,
-    title: "E-move",
-    github: "https://github.com",
-    demo: "https://github.com",
-    discription: " Lorem ipsum dolor sit amet.",
-  },
-  {
-    id: 5,
-    image: img5,
-    title: "E-move",
-    github: "https://github.com",
-    demo: "https://github.com",
-    discription: " Lorem ipsum dolor sit amet.",
-  },
-  {
-    id: 6,
-    image: img6,
-    title: "E-move",
-    github: "https://github.com",
-    demo: "https://github.com",
-    discription: " Lorem ipsum dolor sit amet.",
+    title: "TODO_APP",
+    github: "https://github.com/tobiadedoyin/TODO_APP",
+    demo: "https://scintillating-marigold-b40762.netlify.app/",
+    discription:
+      "The To-do app is a type of productivity app that helps users organize and manage their tasks.",
   },
 ];
 

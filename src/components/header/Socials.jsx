@@ -21,7 +21,11 @@ export default function Socials() {
         >
           <BsGithub />
         </a>
-        <a href="https://dribble.com" target="_blank" rel="noreferrer">
+        <a
+          href="https://medium.com/@tobiadedoyin"
+          target="_blank"
+          rel="noreferrer"
+        >
           <BsDribbble />
         </a>
       </div>

@@ -14,67 +14,55 @@ export default function Services() {
           <ul className="service__list">
             <li>
               <CiBookmarkCheck className="service__list-icon" />
-              <p>Lorem ipsum dolor sit amet consectetur </p>
+              <p>Technical documention </p>
             </li>
             <li>
               <CiBookmarkCheck className="service__list-icon" />
-              <p>Lorem ipsum dolor sit amet consectetur</p>
+              <p>Formulation of users story</p>
             </li>
             <li>
               <CiBookmarkCheck className="service__list-icon" />
-              <p>Lorem ipsum dolor sit.</p>
-            </li>
-            <li>
-              <CiBookmarkCheck className="service__list-icon" />
-              <p>Lorem ipsum dolor sit</p>
+              <p>API documention</p>
             </li>
           </ul>
         </article>
         {/* web development */}
         <article className="service">
           <div className="service__head">
-            <h3>Web Development</h3>
+            <h3>Frontend Development</h3>
           </div>
           <ul className="service__list">
             <li>
               <CiBookmarkCheck className="service__list-icon" />
-              <p>Lorem ipsum dolor sit amet consectetur </p>
+              <p>React Native</p>
             </li>
             <li>
               <CiBookmarkCheck className="service__list-icon" />
-              <p>Lorem ipsum dolor sit amet consectetur</p>
+              <p>React js</p>
             </li>
             <li>
               <CiBookmarkCheck className="service__list-icon" />
-              <p>Lorem ipsum dolor sit.</p>
-            </li>
-            <li>
-              <CiBookmarkCheck className="service__list-icon" />
-              <p>Lorem ipsum dolor sit</p>
+              <p>Figma design interpretation to code</p>
             </li>
           </ul>
         </article>
         {/* e */}
         <article className="service">
           <div className="service__head">
-            <h3>TECHNICAL WRITING</h3>
+            <h3>Backend Development</h3>
           </div>
           <ul className="service__list">
             <li>
               <CiBookmarkCheck className="service__list-icon" />
-              <p>Lorem ipsum dolor sit amet consectetur </p>
+              <p>Generating Endpoints </p>
             </li>
             <li>
               <CiBookmarkCheck className="service__list-icon" />
-              <p>Lorem ipsum dolor sit amet consectetur</p>
+              <p>Testing of Endpoints</p>
             </li>
             <li>
               <CiBookmarkCheck className="service__list-icon" />
-              <p>Lorem ipsum dolor sit.</p>
-            </li>
-            <li>
-              <CiBookmarkCheck className="service__list-icon" />
-              <p>Lorem ipsum dolor sit</p>
+              <p>Server Security</p>
             </li>
           </ul>
         </article>

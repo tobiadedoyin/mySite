@@ -38,10 +38,13 @@ export default function About() {
           </div>
 
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-            itaque vel voluptas quos, eum ipsum nulla, dolor ad, sint alias
-            necessitatibus possimus. Officia pariatur, omnis quod vitae
-            asperiores vel maxime!
+            Highly skilled full stack Developer with years of experience in
+            optimizing and deploying high-performance applications. Proven track
+            record in improving system performance by up to 50%, reducing
+            development time by 25%, and increasing team productivity by 15%.
+            Collaborative team player with expertise in microservices
+            architecture, RESTful API optimization, and data protection
+            protocols..
           </p>
           <a href="#contact" className="btn btn__primary">
             {" "}
