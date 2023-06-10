@@ -518,7 +518,33 @@ textarea {
   resize: none;
   color: #fff;
 }
-@media screem and (width: 1024px) {
+@media screem and (max-width: 1024px) {
+  .container.contact__container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
 }
-@media screen and (width: 600px) {
+@media screen and (max-width: 600px) {
+  .container.contact__container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    width: var(--container-width-sm);
+  }
+}
+/* footer */
+footer {
+  background: var(--color-primary);
+  padding: 3rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 10rem;
+}
+footer a {
+  color: var(--color-bg);
+}
+.footer__logo {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  display: inline-block;
 }
