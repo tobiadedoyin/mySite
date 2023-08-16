@@ -1,6 +1,7 @@
 import React from "react";
 import img1 from "../assets/portfolio.png";
 import img2 from "../assets/portfolio2.png";
+import img3 from "../assets/RCP.jpeg";
 const data = [
   {
     id: 1,
@@ -19,6 +20,15 @@ const data = [
     demo: "https://scintillating-marigold-b40762.netlify.app/",
     discription:
       "The To-do app is a type of productivity app that helps users organize and manage their tasks.",
+  },
+  {
+    id: 3,
+    image: img3,
+    title: "RoScPA",
+    github: "https://github.com/tobiadedoyin/RSP_game",
+    demo: "https://tobiadedoyin.github.io/RSP_game/",
+    discription:
+      "Rock, Scissors, paper is a common game among children, the rules of the game is clearly stated in th instruction tab.",
   },
 ];
 

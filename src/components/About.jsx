@@ -27,7 +27,7 @@ export default function About() {
             <article className="about__card">
               <AiOutlineUserAdd className="about__icon" />
               <h4>clients</h4>
-              <small>30+ clients </small>
+              <small>10+ clients </small>
             </article>
 
             <article className="about__card">
