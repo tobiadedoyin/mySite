@@ -1,22 +1,22 @@
 import React from "react";
 import Header from "./components/header/Header";
-import About from "./components/About";
 import Nav from "./components/Nav";
-import Experience from "./components/Experience";
-import Footer from "./components/Footer";
-import Potfolio from "./components/Potfolio";
-import Services from "./components/Services";
+import Capabilities from "./components/Capabilities";
+import CaseStudies from "./components/CaseStudies";
+import Ventures from "./components/Ventures";
+import About from "./components/About";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
     <>
       <Header />
       <Nav />
+      <Capabilities />
+      <CaseStudies />
+      <Ventures />
       <About />
-      <Experience />
-      <Services />
-      <Potfolio />
       <Contact />
       <Footer />
     </>

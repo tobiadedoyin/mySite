@@ -1,49 +1,52 @@
-import React, { useState } from "react";
-import { AiFillHome } from "react-icons/ai";
-import { AiOutlineUserAdd } from "react-icons/ai";
-import { MdOutlineBookmarkAdd } from "react-icons/md";
-import { AiFillContacts } from "react-icons/ai";
-import { FcServices } from "react-icons/fc";
+import React, { useState, useEffect } from "react";
+import { AiFillHome, AiFillContacts } from "react-icons/ai";
+import { TbBrandReactNative } from "react-icons/tb";
+import { HiOutlineViewGrid } from "react-icons/hi";
+import { MdRocketLaunch, MdPerson } from "react-icons/md";
+
+const navItems = [
+  { id: "#home", icon: <AiFillHome />, label: "Home" },
+  { id: "#capabilities", icon: <HiOutlineViewGrid />, label: "Capabilities" },
+  { id: "#work", icon: <TbBrandReactNative />, label: "Work" },
+  { id: "#ventures", icon: <MdRocketLaunch />, label: "Ventures" },
+  { id: "#about", icon: <MdPerson />, label: "About" },
+  { id: "#contact", icon: <AiFillContacts />, label: "Contact" },
+];
 
 export default function Nav() {
-  const [activeNav, setActiveNav] = useState("#");
+  const [active, setActive] = useState("#home");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = navItems.map((item) => ({
+        id: item.id,
+        el: document.querySelector(item.id),
+      }));
+      const scrollY = window.scrollY + window.innerHeight / 3;
+      for (let i = sections.length - 1; i >= 0; i--) {
+        if (sections[i].el && sections[i].el.offsetTop <= scrollY) {
+          setActive(sections[i].id);
+          break;
+        }
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <nav>
-      <a
-        href="/#"
-        className={activeNav === "#" ? "active" : ""}
-        onClick={() => setActiveNav("#")}
-      >
-        <AiFillHome />
-      </a>
-      <a
-        href="#about"
-        className={activeNav === "#about" ? "active" : ""}
-        onClick={() => setActiveNav("#about")}
-      >
-        <AiOutlineUserAdd />
-      </a>
-      <a
-        href="#experience"
-        className={activeNav === "#experience" ? "active" : ""}
-        onClick={() => setActiveNav("#experience")}
-      >
-        <MdOutlineBookmarkAdd />
-      </a>
-      <a
-        href="#services"
-        className={activeNav === "#services" ? "active" : ""}
-        onClick={() => setActiveNav("#services")}
-      >
-        <FcServices />
-      </a>
-      <a
-        href="#contact"
-        className={activeNav === "#contact" ? "active" : ""}
-        onClick={() => setActiveNav("#contact")}
-      >
-        <AiFillContacts />
-      </a>
+      {navItems.map((item) => (
+        <a
+          key={item.id}
+          href={item.id}
+          className={`nav-item ${active === item.id ? "active" : ""}`}
+          onClick={() => setActive(item.id)}
+          title={item.label}
+        >
+          {item.icon}
+        </a>
+      ))}
     </nav>
   );
 }

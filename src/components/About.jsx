@@ -1,55 +1,81 @@
 import React from "react";
 import ME from "../assets/me.jpg";
-import { FaAward } from "react-icons/fa";
-import { FcLibrary } from "react-icons/fc";
-import { AiOutlineUserAdd } from "react-icons/ai";
+import CV from "../assets/cv.pdf";
 
 export default function About() {
   return (
     <section id="about">
-      <h5>Get to know</h5>
-      <h2>Know me</h2>
-      <div className="container about__container">
-        <div className="about__me">
-          <div className="about__me-image">
-            <img src={ME} alt="" />
-          </div>
-        </div>
-
-        <div className="about__content">
-          <div className="about__cards">
-            <article className="about__card">
-              <FaAward className="about__icon" />
-              <h4>Experience</h4>
-              <small>2+ years </small>
-            </article>
-
-            <article className="about__card">
-              <AiOutlineUserAdd className="about__icon" />
-              <h4>clients</h4>
-              <small>10+ clients </small>
-            </article>
-
-            <article className="about__card">
-              <FcLibrary className="about__icon" />
-              <h4>Projects</h4>
-              <small>15+ project </small>
-            </article>
+      <div className="container">
+        <div className="about-container">
+          {/* Photo */}
+          <div className="about-photo-wrap">
+            <div className="about-photo">
+              <img src={ME} alt="Tobi Oladele" />
+            </div>
+            <div className="about-badge">
+              <div className="about-badge-number">5+</div>
+              <div className="about-badge-label">Years in Production</div>
+            </div>
           </div>
 
-          <p>
-            Highly skilled full stack Developer with years of experience in
-            optimizing and deploying high-performance applications. Proven track
-            record in improving system performance by up to 50%, reducing
-            development time by 25%, and increasing team productivity by 15%.
-            Collaborative team player with expertise in microservices
-            architecture, RESTful API optimization, and data protection
-            protocols..
-          </p>
-          <a href="#contact" className="btn btn__primary">
-            {" "}
-            let's talk
-          </a>
+          {/* Content */}
+          <div className="about-content">
+            <div>
+              <div className="section-label">About</div>
+              <h2 className="section-title">
+                Systems Builder.
+                <br />Technology Entrepreneur.
+              </h2>
+            </div>
+
+            <p className="about-text">
+              I'm <strong style={{ color: "var(--text-primary)" }}>Tobi Oladele</strong> — a backend and platform engineer
+              who has spent the last five years building financial infrastructure,
+              payment systems, cloud-native services, and multi-tenant business
+              platforms in Nigeria's fintech and proptech sectors.
+            </p>
+
+            <p className="about-text">
+              My work lives at the intersection of rigorous engineering and real
+              business outcomes. I don't just write code — I design systems that
+              handle money, manage trust, and operate reliably under load. Whether
+              that's a payment routing engine processing thousands of daily transactions,
+              or a multi-tenant SaaS serving multiple businesses on shared infrastructure,
+              I care deeply about correctness, observability, and long-term maintainability.
+            </p>
+
+            <p className="about-text">
+              Beyond client and employment work, I co-found technology ventures through
+              Bemfot — applying the same engineering rigour to markets I believe in:
+              real estate and agriculture. This dual identity as engineer and founder
+              shapes how I think about product, scalability, and the real cost of
+              technical decisions.
+            </p>
+
+            <div className="about-metrics">
+              <div className="about-metric">
+                <div className="about-metric-number">5+</div>
+                <div className="about-metric-label">Years Building</div>
+              </div>
+              <div className="about-metric">
+                <div className="about-metric-number">3</div>
+                <div className="about-metric-label">Ventures Co-Founded</div>
+              </div>
+              <div className="about-metric">
+                <div className="about-metric-number">10+</div>
+                <div className="about-metric-label">Production Systems</div>
+              </div>
+            </div>
+
+            <div className="about-actions">
+              <a href="#contact" className="btn btn-primary">
+                Let's Talk
+              </a>
+              <a href={CV} download className="btn btn-outline">
+                Download CV
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
