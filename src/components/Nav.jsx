@@ -3,12 +3,14 @@ import { AiFillHome, AiFillContacts } from "react-icons/ai";
 import { TbBrandReactNative } from "react-icons/tb";
 import { HiOutlineViewGrid } from "react-icons/hi";
 import { MdRocketLaunch, MdPerson } from "react-icons/md";
+import { FaRegLightbulb } from "react-icons/fa";
 
 const navItems = [
   { id: "#home", icon: <AiFillHome />, label: "Home" },
   { id: "#capabilities", icon: <HiOutlineViewGrid />, label: "Capabilities" },
   { id: "#work", icon: <TbBrandReactNative />, label: "Work" },
   { id: "#ventures", icon: <MdRocketLaunch />, label: "Ventures" },
+  { id: "#openminds", icon: <FaRegLightbulb />, label: "OpenMinds" },
   { id: "#about", icon: <MdPerson />, label: "About" },
   { id: "#contact", icon: <AiFillContacts />, label: "Contact" },
 ];
