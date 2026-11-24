@@ -14,7 +14,7 @@ const caseStudies = [
       "Chose a modular monolith over microservices to reduce operational complexity at early scale. Implemented double-entry bookkeeping at the database level with PostgreSQL constraints to guarantee ledger integrity. Used database-level row-level security for data isolation.",
     tech: ["NestJS", "PostgreSQL", "Prisma", "Redis", "Docker", "AWS EC2", "TypeScript"],
     outcome:
-      "Delivered a production-ready core banking API handling 10,000+ daily transactions with 99.9% uptime. Passed regulatory technical review with zero ledger discrepancies across 6 months of operation.",
+      "Delivered the core banking API foundation with distinct account, ledger, transaction, compliance, and notification domains. The design prioritised ledger integrity, traceability, and operational auditability.",
   },
   {
     number: "02",
@@ -29,7 +29,7 @@ const caseStudies = [
       "Implemented circuit breakers per provider to avoid hammering failing gateways. Webhook verification and idempotency keys prevent duplicate processing. A reconciliation job runs hourly to detect and flag mismatched states between our ledger and provider records.",
     tech: ["Node.js", "TypeScript", "Paystack", "Flutterwave", "ISW", "Bull", "Redis", "PostgreSQL"],
     outcome:
-      "Achieved 99.7% payment success rate across providers. Automatic failover reduced user-facing payment failures by 94%. Reconciliation caught and resolved 3 provider-side discrepancies in the first month.",
+      "Delivered a unified payment orchestration layer with provider adapters, health-aware routing, circuit breakers, idempotent webhook handling, and reconciliation workflows.",
   },
   {
     number: "03",
@@ -44,7 +44,7 @@ const caseStudies = [
       "Used SSE over WebSockets for better proxy compatibility in the field. Implemented command queuing for terminals that go offline, with retry on reconnection. Terminal transaction data flows through an async pipeline to avoid blocking the primary connection.",
     tech: ["NestJS", "SSE", "PostgreSQL", "Redis", "Bull", "TypeScript", "AWS", "Nginx"],
     outcome:
-      "Managing 2,000+ terminals with real-time visibility. Firmware push success rate improved to 98.2%. Settlement report generation dropped from 4 hours manual work to automated 15-minute batches.",
+      "Delivered terminal lifecycle monitoring, offline command queuing, retry-on-reconnection behaviour, asynchronous transaction processing, and automated settlement reporting.",
   },
   {
     number: "04",
@@ -59,7 +59,7 @@ const caseStudies = [
       "Chose schema-based over database-per-tenant to balance isolation and operational cost. Implemented soft deletes with audit logs for all tenant data changes. Background jobs for rent reminders, arrears detection, and financial report generation run per-tenant with priority queuing.",
     tech: ["NestJS", "PostgreSQL", "Prisma", "Redis", "BullMQ", "Paystack", "AWS S3", "TypeScript"],
     outcome:
-      "Platform serving multiple property businesses across Nigeria. Automated rent reminder system reduced manual follow-up by 80%. Financial reconciliation that took days now runs automatically nightly.",
+      "Delivered a multi-tenant property management foundation covering organisation-level data isolation, role-based access, subscription controls, rent reminders, arrears workflows, and scheduled financial reporting.",
   },
   {
     number: "05",
@@ -74,7 +74,7 @@ const caseStudies = [
       "Designed platform services as internal APIs with versioned contracts so ventures can evolve independently. Centralised observability with structured logging allows cross-product debugging. Chose NestJS modules for consistent patterns across all services in the group.",
     tech: ["NestJS", "TypeScript", "PostgreSQL", "AWS S3", "Redis", "Docker", "Paystack", "Firebase"],
     outcome:
-      "Reduced time-to-first-feature for each new venture by ~60% through shared platform primitives. Single identity system manages users across all Bemfot products with unified auth.",
+      "Established reusable platform services for authentication, file management, notifications, and billing, allowing venture products to consume shared capabilities through internal APIs.",
   },
 ];
 
@@ -92,9 +92,10 @@ export default function CaseStudies() {
           <div className="section-label">Selected Work</div>
           <h2 className="section-title">Engineering Case Studies</h2>
           <p className="section-subtitle">
-            Five systems built for production — each documented through the
-            lens of problems solved, architectural decisions made, and
-            outcomes delivered.
+            Selected engineering work, documented through the problems addressed,
+            architectural decisions, technologies, and delivered capabilities.
+            Quantified performance claims are intentionally omitted where
+            independently verifiable evidence is not published.
           </p>
         </div>
 
