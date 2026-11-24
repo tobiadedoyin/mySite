@@ -77,7 +77,7 @@ export default function Contact() {
               </a>
 
               <a
-                href="https://linkedin.com/in/tobi-oladele-b42395124/"
+                href="https://www.linkedin.com/in/oladeletobiadedoyin/"
                 target="_blank"
                 rel="noreferrer"
                 className="contact-option"
