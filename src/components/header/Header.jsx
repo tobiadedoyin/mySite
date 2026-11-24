@@ -8,7 +8,7 @@ const roles = [
   "Senior Backend Engineer",
   "Platform Architect",
   "Technology Entrepreneur",
-  "Financial Systems Specialist",
+  "Public-Interest Technology",
 ];
 
 export default function Header() {
@@ -41,7 +41,6 @@ export default function Header() {
     <section id="home" className="hero">
       <div className="hero-ambient" />
       <div className="hero-container">
-        {/* Left: Text Content */}
         <div className="hero-content">
           <div className="hero-tag animate-fade-up">
             <span className="dot" />
@@ -71,7 +70,8 @@ export default function Header() {
             <br />
             Senior Backend &amp; Platform Engineer specializing in
             transaction-intensive systems, cloud-native infrastructure,
-            and multi-tenant SaaS.
+            and multi-tenant SaaS, with a growing focus on privacy-aware
+            engineering and technology for public benefit.
           </p>
 
           <div className="hero-cta animate-fade-up delay-3">
@@ -92,24 +92,24 @@ export default function Header() {
               <div className="hero-stat-label">Years Building</div>
             </div>
             <div>
-              <div className="hero-stat-number">3</div>
-              <div className="hero-stat-label">Ventures Co-Founded</div>
+              <div className="hero-stat-number">2</div>
+              <div className="hero-stat-label">Bemfot Ventures</div>
             </div>
             <div>
-              <div className="hero-stat-number">∞</div>
-              <div className="hero-stat-label">Transactions Processed</div>
+              <div className="hero-stat-number">Data</div>
+              <div className="hero-stat-label">Governance in Focus</div>
             </div>
           </div>
         </div>
 
-        {/* Right: Photo */}
         <div className="hero-visual">
           <div className="hero-socials">
             <a
-              href="https://linkedin.com/in/tobi-oladele-b42395124/"
+              href="https://www.linkedin.com/in/oladeletobiadedoyin/"
               target="_blank"
               rel="noreferrer"
               className="hero-social-link"
+              aria-label="LinkedIn profile"
             >
               <BsLinkedin />
             </a>
@@ -118,6 +118,7 @@ export default function Header() {
               target="_blank"
               rel="noreferrer"
               className="hero-social-link"
+              aria-label="GitHub profile"
             >
               <BsGithub />
             </a>
